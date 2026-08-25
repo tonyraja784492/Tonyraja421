@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Amazon and snapdeal</td>
+      <td>25 Aug 2026, 11:50</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">ExecutionClass.it_should_be_navigate_into_product_listing_page()</td>
+              <td>5</td>
+              <td class="duration" data-value="2047600">0.002</td>
+              <td class="duration" data-value="2047600">0.005</td>
+              <td class="duration" data-value="10238000">0.010</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ExecutionClass.user_click_the_search_button()</td>
+              <td>5</td>
+              <td class="duration" data-value="4022501000">4.022</td>
+              <td class="duration" data-value="4022501000">10.496</td>
+              <td class="duration" data-value="20112505000">20.112</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ExecutionClass.user_enter_the_in_search_box(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="496217125">0.496</td>
+              <td class="duration" data-value="496217125">0.687</td>
+              <td class="duration" data-value="1984868500">1.984</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ExecutionClass.user_enter_the_product_in_search_box(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="4081525300">4.081</td>
+              <td class="duration" data-value="4081525300">4.081</td>
+              <td class="duration" data-value="4081525300">4.081</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ExecutionClass.user_launch_the_amazon_application_url()</td>
+              <td>5</td>
+              <td class="duration" data-value="5668884940">5.668</td>
+              <td class="duration" data-value="5668884940">6.704</td>
+              <td class="duration" data-value="28344424700">28.344</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HookClass.browserLaunch()</td>
+              <td>6</td>
+              <td class="duration" data-value="1674801816">1.674</td>
+              <td class="duration" data-value="1674801816">3.155</td>
+              <td class="duration" data-value="10048810900">10.048</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HookClass.closeBrowse()</td>
+              <td>6</td>
+              <td class="duration" data-value="440258700">0.440</td>
+              <td class="duration" data-value="440258700">0.595</td>
+              <td class="duration" data-value="2641552200">2.641</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">SnapDealExecution.it_should_be_navigate_into_product_listing_page_in_snapdeal()</td>
+              <td>1</td>
+              <td class="duration" data-value="901300">0.000</td>
+              <td class="duration" data-value="901300">0.000</td>
+              <td class="duration" data-value="901300">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">SnapDealExecution.user_click_the_search_button_in_snapdeal()</td>
+              <td>1</td>
+              <td class="duration" data-value="116359000">0.116</td>
+              <td class="duration" data-value="116359000">0.116</td>
+              <td class="duration" data-value="116359000">0.116</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">SnapDealExecution.user_enter_the_product_in_search_box_in_snapdeal()</td>
+              <td>1</td>
+              <td class="duration" data-value="579844100">0.579</td>
+              <td class="duration" data-value="579844100">0.579</td>
+              <td class="duration" data-value="579844100">0.579</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">SnapDealExecution.user_launch_the_snapdeal_application_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="2410656100">2.410</td>
+              <td class="duration" data-value="2410656100">2.410</td>
+              <td class="duration" data-value="2410656100">2.410</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>11</td>
+            <td>36</td>
+            <td class="duration">1.953</td>
+            <td class="duration">28.344</td>
+            <td class="duration">1:10.331</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

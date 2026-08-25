@@ -1,0 +1,673 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3490777300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the amazon application url",
+            "match": {
+              "location": "ExecutionClass.user_launch_the_amazon_application_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-08-25T06:19:33.963Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3155624400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.browserLaunch()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "verify the product search with valid product name",
+        "description": "",
+        "id": "validate-the-product-search-in-amazon;verify-the-product-search-with-valid-product-name",
+        "after": [
+          {
+            "result": {
+              "duration": 595040800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.closeBrowse()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4081525300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter the product in search box",
+            "match": {
+              "location": "ExecutionClass.user_enter_the_product_in_search_box(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "product1"
+                ]
+              },
+              {
+                "cells": [
+                  "helicopter"
+                ]
+              },
+              {
+                "cells": [
+                  "aeroplane"
+                ]
+              },
+              {
+                "cells": [
+                  "kids toy"
+                ]
+              },
+              {
+                "cells": [
+                  "Tooth paste"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10496283200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click the search button",
+            "match": {
+              "location": "ExecutionClass.user_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5772400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "It should be navigate into product listing page",
+            "match": {
+              "location": "ExecutionClass.it_should_be_navigate_into_product_listing_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5738660400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the amazon application url",
+            "match": {
+              "location": "ExecutionClass.user_launch_the_amazon_application_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-08-25T06:19:55.905Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1975056700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.browserLaunch()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "verify the product search with valid product name",
+        "description": "",
+        "id": "validate-the-product-search-in-amazon;verify-the-product-search-with-valid-product-name;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 415421500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.closeBrowse()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 419209400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enter the \"samsung\" in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"samsung\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ExecutionClass.user_enter_the_in_search_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 448288300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click the search button",
+            "match": {
+              "location": "ExecutionClass.user_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1068300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "It should be navigate into product listing page",
+            "match": {
+              "location": "ExecutionClass.it_should_be_navigate_into_product_listing_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6690273300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the amazon application url",
+            "match": {
+              "location": "ExecutionClass.user_launch_the_amazon_application_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-08-25T06:20:04.924Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1317070300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.browserLaunch()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "verify the product search with valid product name",
+        "description": "",
+        "id": "validate-the-product-search-in-amazon;verify-the-product-search-with-valid-product-name;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 464039400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.closeBrowse()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 367786800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enter the \"iphone\" in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ExecutionClass.user_enter_the_in_search_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3953031600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click the search button",
+            "match": {
+              "location": "ExecutionClass.user_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1064400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "It should be navigate into product listing page",
+            "match": {
+              "location": "ExecutionClass.it_should_be_navigate_into_product_listing_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6704830600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the amazon application url",
+            "match": {
+              "location": "ExecutionClass.user_launch_the_amazon_application_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-08-25T06:20:17.728Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1295035000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.browserLaunch()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "verify the product search with valid product name",
+        "description": "",
+        "id": "validate-the-product-search-in-amazon;verify-the-product-search-with-valid-product-name;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 584281700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.closeBrowse()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 687937400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enter the \"vivo\" in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vivo\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ExecutionClass.user_enter_the_in_search_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4750528900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click the search button",
+            "match": {
+              "location": "ExecutionClass.user_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 718200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "It should be navigate into product listing page",
+            "match": {
+              "location": "ExecutionClass.it_should_be_navigate_into_product_listing_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5719883100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the amazon application url",
+            "match": {
+              "location": "ExecutionClass.user_launch_the_amazon_application_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-08-25T06:20:31.761Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1122940700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.browserLaunch()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "verify the product search with valid product name",
+        "description": "",
+        "id": "validate-the-product-search-in-amazon;verify-the-product-search-with-valid-product-name;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 358785100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.closeBrowse()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 509934900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enter the \"oppo\" in search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"oppo\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ExecutionClass.user_enter_the_in_search_box(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 464373000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click the search button",
+            "match": {
+              "location": "ExecutionClass.user_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1614700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "It should be navigate into product listing page",
+            "match": {
+              "location": "ExecutionClass.it_should_be_navigate_into_product_listing_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the product search in amazon",
+    "description": "",
+    "id": "validate-the-product-search-in-amazon",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/amazon.feature",
+    "tags": [
+      {
+        "name": "@sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2410656100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launch the snapdeal application url",
+            "match": {
+              "location": "SnapDealExecution.user_launch_the_snapdeal_application_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-08-25T06:20:39.944Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1183083800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.browserLaunch()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "verify the product search with valid product name in snapdeal",
+        "description": "",
+        "id": "validate-the-product-search-in-snapdeal;verify-the-product-search-with-valid-product-name-in-snapdeal",
+        "after": [
+          {
+            "result": {
+              "duration": 223983700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.closeBrowse()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 579844100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter the product in search box in snapdeal",
+            "match": {
+              "location": "SnapDealExecution.user_enter_the_product_in_search_box_in_snapdeal()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116359000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click the search button in snapdeal",
+            "match": {
+              "location": "SnapDealExecution.user_click_the_search_button_in_snapdeal()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 901300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "It should be navigate into product listing page in snapdeal",
+            "match": {
+              "location": "SnapDealExecution.it_should_be_navigate_into_product_listing_page_in_snapdeal()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate the product search in snapdeal",
+    "description": "",
+    "id": "validate-the-product-search-in-snapdeal",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/snapdeal.feature",
+    "tags": []
+  }
+]
